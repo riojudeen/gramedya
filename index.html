@@ -168,11 +168,11 @@
         const addData = async () => {
             const isiData = {
                 "name" : $("#name-add").val(),
-                "type_book.name" : $("#name-add").val()
+                "type_book" : $("#name-add").val()
                 
             }
             try{
-                const addToAPI = await axios.post(API, isiData)
+                const add = await axios.post(API, isiData)
                 alert("sukses")
                 // getListData()
                 $("#exampleModal").modal("hide")
@@ -184,6 +184,8 @@
             e.preventDefault();
             addData()
         });
+
+        // kok error terus wkwkwkw
     </script>
   </body>
 </html>
